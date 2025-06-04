@@ -1,0 +1,21 @@
+# Training configuration
+
+# Experiment tracking
+experiment_name: "stock_prediction_lstm"
+
+# Data configuration
+data_path: "data/RELIANCE.NS.csv"
+target_column: "Close"
+train_ratio: 0.8
+
+# Model configuration
+sequence_length: 60
+n_features: 1
+epochs: 100
+batch_size: 32
+
+# Model saving
+model_path: "models/best_model.h5"
+
+# MLflow configuration
+mlflow_tracking_uri: "mlruns" 
